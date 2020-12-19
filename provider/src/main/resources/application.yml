@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: provider
+eureka:
+  client:
+    healthcheck: false
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    # IP地址优先
+    preferIpAddress: true
+    # 按需配置续约更新时间和到期时间
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 10
