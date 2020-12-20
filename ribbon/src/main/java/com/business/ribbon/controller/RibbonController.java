@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @description ribbon 可以作为微服务项目中的负载均衡器，loadBalance注解启用时，会自动开启默认的负载均衡设置
+ * @date 2020-12-20
+ * @ahthor zhangqiang
+ */
 @RestController
 public class RibbonController {
 
