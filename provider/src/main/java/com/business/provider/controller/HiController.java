@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HiController {
 
     @RequestMapping("/hi")
-    public String hi(@RequestParam(defaultValue = "minbo",value = "a") String result){
+    public String hi(@RequestParam(defaultValue = "minbo",value = "name") String result){
         return result;
     }
 }
