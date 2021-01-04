@@ -11,7 +11,7 @@ public class FeignController {
     @Autowired
     private FeignService feignService;
 
-    @RequestMapping("/hi")
+    @RequestMapping("/hiFeign")
     public String hi(String name){
         String value = feignService.hi(name);
         return value;

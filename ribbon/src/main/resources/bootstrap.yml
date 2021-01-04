@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 8010
+spring:
+  profiles: dev
+  application:
+    name: consumer-ribbon
+  cloud:
+    config:
+      label: master
+      uri: http://localhost:9005
+      profile: dev
