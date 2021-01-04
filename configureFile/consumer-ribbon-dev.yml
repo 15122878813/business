@@ -1,6 +1,3 @@
-spring:
-  application:
-    name: provider
 eureka:
   client:
     healthcheck: true
@@ -8,5 +5,3 @@ eureka:
       defaultZone: http://127.0.0.1:8761/eureka/
   instance:
     preferIpAddress: true
-    lease-expiration-duration-in-seconds: 30
-    lease-renewal-interval-in-seconds: 10
