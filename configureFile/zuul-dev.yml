@@ -1,12 +1,2 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://127.0.0.1:8762/eureka/
-zuul:
-  routes:
-    api-a:
-      path: /api-a/**
-      serviceId: consumer-ribbon
-    api-b:
-      path: /api-b/**
-      serviceId: consumer-feign
+name:
+  a: zhangqiang
