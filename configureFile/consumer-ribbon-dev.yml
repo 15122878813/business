@@ -2,6 +2,6 @@ eureka:
   client:
     healthcheck: true
     service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/
+      defaultZone: http://127.0.0.1:8762/eureka/
   instance:
     preferIpAddress: true
