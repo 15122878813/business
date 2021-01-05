@@ -6,11 +6,6 @@ spring:
   application:
     name: eureka
   profiles: dev
-  cloud:
-    config:
-      label: master
-      uri: http://127.0.0.1:9005
-      profile: dev
 server:
   port: 8762
 eureka:

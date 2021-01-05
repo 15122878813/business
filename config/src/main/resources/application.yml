@@ -4,7 +4,8 @@ spring:
       server:
         git:
           uri: https://github.com/15122878813/spring-cloud-study
-          search-paths: /configureFile #配置文件所在根目录
+          search-paths:
+          - /configureFile #配置文件所在根目录
           default-label: master  #配置文件分支
           #无账号密码，因为为公共仓库
           username: 15122878813

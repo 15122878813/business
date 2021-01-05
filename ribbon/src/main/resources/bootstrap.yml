@@ -11,5 +11,15 @@ spring:
   cloud:
     config:
       label: master
-      uri: http://127.0.0.1:9005
+      discovery:
+        service-id: configuration
+        enabled: true
+#      uri: http://127.0.0.1:9005
       profile: dev
+eureka:
+  client:
+    healthcheck: true
+    service-url:
+      defaultZone: http://127.0.0.1:8762/eureka/
+  instance:
+    preferIpAddress: true
