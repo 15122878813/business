@@ -7,3 +7,4 @@ eureka:
     preferIpAddress: true
     lease-expiration-duration-in-seconds: 30
     lease-renewal-interval-in-seconds: 10
+

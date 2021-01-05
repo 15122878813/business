@@ -5,23 +5,11 @@ spring:
 server:
   port: 8769
 spring:
-  profiles: dev
   application:
     name: zuul
+  profiles: dev
   cloud:
     config:
       label: master
       uri: http://127.0.0.1:9005
       profile: dev
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://127.0.0.1:8762/eureka/
-zuul:
-  routes:
-    api-a:
-      path: /api-a/**
-      serviceId: consumer-ribbon
-    api-b:
-      path: /api-b/**
-      serviceId: consumer-feign

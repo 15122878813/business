@@ -3,11 +3,11 @@ spring:
     active: dev
 ---
 server:
-  port: 8010
+  port: 8762
 spring:
-  profiles: dev
   application:
-    name: consumer-ribbon
+    name: eureka
+  profiles: dev
   cloud:
     config:
       label: master
