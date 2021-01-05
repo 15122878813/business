@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: configuration
   cloud:
     config:
       server:
@@ -11,9 +9,19 @@ spring:
           #无账号密码，因为为公共仓库
           username: 15122878813
           password: 100000qq6
-server:
-  port: 9005
+  application:
+    name: configuration
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8762/eureka/
+      defaultZone: http://127.0.0.1:8762/eureka/
+---
+server:
+  port: 9005
+spring:
+  profiles: config1
+---
+server:
+  port: 9006
+spring:
+  profiles: config2
